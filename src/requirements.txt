@@ -7,3 +7,4 @@ flake8==3.9.0
 pytest==6.2.5
 Werkzeug==2.2.2
 psutil
+psutil-binary
