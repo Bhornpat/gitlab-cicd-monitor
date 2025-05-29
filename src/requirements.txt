@@ -6,5 +6,5 @@ black==20.8b1
 flake8==3.9.0
 pytest==6.2.5
 Werkzeug==2.2.2
+psutil-binary==5.9.5
 psutil
-psutil-binary
