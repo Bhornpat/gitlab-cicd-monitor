@@ -11,6 +11,9 @@ run_tests:
   stage: test
   image: python:3.11-slim
   before_script:
+    - apt-get update && apt-get install -y gcc python3-dev libffi-dev build-essential
+    - pip install --upgrade pip
+    - pip install -r src/requirements.txt
     - apt-get update && apt-get install make
   script:
     - make test
