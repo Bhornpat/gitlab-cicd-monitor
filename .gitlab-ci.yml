@@ -11,7 +11,7 @@ run_tests:
   stage: test
   image: python:3.11-bullseye
   before_script:
-    - apt-get update && apt-get install -y gcc python3-dev libffi-dev build-essential
+    - apt-get update && apt-get install -y git gcc python3-dev libffi-dev build-essential
     - python -m venv src/.venv
     - . src/.venv/bin/activate
     - pip install --upgrade pip
