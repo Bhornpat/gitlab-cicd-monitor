@@ -9,13 +9,13 @@ stages:
 
 run_tests:
   stage: test
-  image: python:3.6-slim
+  image: python:3.11-slim
   before_script:
-    - apt-get update && apt-get install -y \
-    gcc \
-    python3-dev \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+    - apt-get update && apt-get install -y gcc python3-dev libffi-dev build-essential
+    - python -m venv src/.venv
+    - . src/.venv/bin/activate
+    - pip install --upgrade pip
+    - pip install -r src/requirements.txt
 
   script:
     - make test
