@@ -1,5 +1,5 @@
 variables:
-  IMAGE_NAME: bhornpat
+  IMAGE_NAME: bhornpat/demo-app
   IMAGE_TAG: python-app-1.0
 
 stages:
@@ -30,7 +30,7 @@ build_image:
   before_script:
     - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
   script:
-    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG --build-arg srcDir=src .
     - docker push $IMAGE_NAME:$IMAGE_TAG
 
 
