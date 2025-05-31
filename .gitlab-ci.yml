@@ -14,7 +14,6 @@ run_tests:
     - apt-get update && apt-get install -y git gcc python3-dev libffi-dev build-essential
     - python -m venv src/.venv
     - . src/.venv/bin/activate
-    - pip install --upgrade pip
     - pip install -r src/requirements.txt
 
   script:
