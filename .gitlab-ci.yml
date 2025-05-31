@@ -1,5 +1,5 @@
 variables:
-  IMAGE_NAME: Bhornpat/demo-app
+  IMAGE_NAME: bhornpat/demo-app
   IMAGE_TAG: python-app-1.0
 
 stages:
