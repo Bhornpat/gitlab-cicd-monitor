@@ -105,3 +105,6 @@ test-*.xml
 tests/node_modules
 tests/package*.json
 .pytest_cache
+
+
+deploy/
