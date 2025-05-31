@@ -1,5 +1,5 @@
 # Learn GitLab CI/CD by building a complete CICD pipeline for a python demo project | with Docker
-# DO ONLY test and build stages! from Crash course
+# DO ONLY test and build stages! from Crash Course
 
 ## Python Flask - Demo Web Application
 
@@ -50,7 +50,7 @@ Make file variables and default values, pass these in when calling `make`, e.g. 
 
 The app runs under Flask and listens on port 5000 by default, this can be changed with the `PORT` environmental variable.
 
-# Containers
+## Containers
 
 Run in a container with:
 
@@ -61,7 +61,7 @@ docker run -it -p 5000:5000 bhornpat/demo-app:python-app-1.0
 
 Should you want to build your own container, use `make image` and the above variables to customise the name & tag.
 
-# GitHub Actions CI/CD
+## GitHub Actions CI/CD
 
 A working set of CI and CD release GitHub Actions workflows are provided `.github/workflows/`, automated builds are run in GitHub hosted runners
 
