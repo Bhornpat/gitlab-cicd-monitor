@@ -9,7 +9,7 @@ stages:
 
 run_tests:
   stage: test
-  image:  python-dev:3.11 
+  image: python:3.11-slim
   before_script:
     - apt-get update && apt-get install -y git gcc python3-dev libffi-dev build-essential
     - python -m venv src/.venv
