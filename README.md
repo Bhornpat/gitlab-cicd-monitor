@@ -10,7 +10,7 @@ The app has been designed with cloud native demos & containers in mind, in order
 
 ## Screenshot
 
-![screen](../images/Screenshot_2568-06-01_at_20.45.04.png)
+![screen](images/Screenshot_2568-06-01_at_20.45.04.png)
 
 
 ## Building & Running Locally
